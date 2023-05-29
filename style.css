@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+     box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+     
+   }
+   
+   /* LOGO STYLE */
+   .logo a {
+     text-decoration: none;
+     color: #000;
+   }
+   .logo a h4 {
+     font-size: 25px;
+     font-weight: 100;
+     letter-spacing: 3px;
+     cursor: pointer;
+     margin-top: 10px;
+     margin-left: 80px;
+   }
+   .logo a h4 span {
+     color: blue;
+     letter-spacing: 1px;
+     font-weight: 1000;
+     font-size: 40PX;
+   }
+   
+   #head-container,#head-left{
+     display: flex;
+   }
+   
+   #head-container{
+     margin-top: 10px;
+     width: 100%;
+     box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+     height: 80px;
+     background-color: rgb(239, 235, 235);
+   }
+   #head-con2{
+     margin-top: 10px;
+     width: 100%;
+     box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+     height: 70px;
+     background-color: #fff;
+   }
+   
+   #head-con3{
+     margin-top: 10px;
+     width: 100%;
+     box-shadow: 2px 4px 2px rgb(17 16 16 / 50%);
+     height: 70px;
+     background-color: #fff;
+   }
+   #head-right{
+     display: flex;
+     width: 50%;
+      
+   }
+   #head-left{
+     width: 50%;
+   }
+   
+   /*---- diferent buttons----*/
+   
+   #home-button{
+     margin-top: 10px;
+     width:10% ;
+     margin-left: 2%;
+     height: 50px;
+     width: 110px;
+     background-color: rgb(105, 104, 104);
+     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+     border: 0px;
+     font-size: 16px;
+     font-weight: 600;
+     border-radius: 10px;
+     color: white;
+     cursor: pointer;
+     margin-left: 100px;
+   }
+   
+   #home-button:hover{
+     box-shadow: 1px 1px 5px black,-0.1px -0.1px 10px rgb(165, 161, 161);
+     cursor: pointer;
+   }
+   .add-button{
+     cursor: pointer;
+     background-color: rgb(105, 104, 104);
+     border: 0px;
+     width: 128px;
+     height: 50px;
+     font-size: 16px;
+     font-weight: 600;
+     border-radius: 10px;
+     color: white;
+     padding: 5px 20px ;
+     margin: 10px;
+   }
+   .add-button:hover{
+     box-shadow: 0px 0px 5px black,-0.1px -0.1px 10px rgb(165, 161, 161);
+     cursor: pointer;
+     transform: scale(1.05);
+   }
+   
+   /*----- search bar---*/
+   
+   .search-input{
+     margin-top: 10px;
+     margin-right: 10px;
+     background: #fff;
+     width: 40%;
+     border-radius: 5px;
+     position: relative;
+     height: 48px;
+     box-shadow: 0px 1px 5px 3px rgb(110, 109, 109);
+   }
+   .search-input input{
+     
+     height: 48px;
+     width: 100%;
+     outline: none;
+     border: none;
+     border-radius: 5px;
+     padding: 0 60px 0 20px;
+     font-size: 15px;
+     box-shadow: 0px 1px 3px BLACK;
+   }
+   .search-input.active input{
+     border-radius: 5px 5px 0 0;
+   }
+   .search-input .autocom-box{
+     padding: 0;
+     opacity: 0;
+     pointer-events: none;
+     max-height: 280px;
+     
+   }
+   .search-input.active .autocom-box{
+     padding: 10px 8px;
+     opacity: 1;
+     pointer-events: auto;
+   }
+   .autocom-box li{
+     list-style: none;
+     padding: 8px 12px;
+     display: none;
+     width: 100%;
+     cursor: default;
+     border-radius: 3px;
+   }
+   .search-input.active .autocom-box li{
+     display: block;
+     background-color:white;
+     box-shadow: 1px 1px 2px rgb(192, 189, 189);
+   }
+   .autocom-box li:hover{
+     background: #efefef;
+   }
+   .search-input .icon{
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     height: 55px;
+     width: 55px;
+     text-align: center;
+     line-height: 55px;
+     font-size: 20px;
+     color: #111111;
+     cursor: pointer;
+   }
+   
+     
+   /*-- teams section /* card grid goes here */
+   
+   .section-heading {
+     margin-top: 100px;
+     font-size: 38px;
+     color: rgb(8, 8, 9);
+     text-align: center;
+     margin-bottom:30px ;
+     background-color: rgb(249, 200, 116);
+   }
+   
+   #container_teams{
+     display:  flex;
+     flex-wrap: wrap;
+     width: 90%;
+    justify-content: center;
+    background:radial-gradient(white, rgb(253, 229, 185));
+   }
+   
+   .minibox{
+     width: 15%;
+     min-width: 200px;
+     height: 200px;
+     margin: 30px 10px;
+     cursor: pointer;
+     background-color: #fff;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+     background:radial-gradient(white, rgb(225, 225, 228));
+   }
+   
+   .minibox{
+     border: 1px solid black;
+     margin-bottom: 60px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 300px;
+     cursor: pointer;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+     border-radius: 5px;
+   } 
+   
+   .minibox:hover {
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+   } 
+   
+   .mainimage{
+     width: 90%;
+   }
+   
+   /*---- team Details----*/
+   
+   .dataodcard{
+     
+     padding-left: 10px;
+     margin: 10px auto;
+   
+   }
+   .text1, .text3{
+     text-align: center;
+     font-size: 16px;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     color: rgb(27, 25, 25);
+   }
+   .text2{
+     margin-top: 10px;
+     text-align: center;
+     font-size: 18px;
+     font-weight: 250;
+     letter-spacing: 2px;
+     color: blue;
+   }
+   #first-main{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 0 4%;
+   }
+   
+   #table-team{
+     margin-top: 20px;
+     margin-bottom: 30px;
+     padding-left: 500px;
+     padding-right: 500px; 
+   }
+   #table-team table{
+     width:100%;
+     border-collapse: collapse;
+     background-color: #fbf1c7;
+   }
+   #table-team table td{
+     padding: 10px 5px;
+     border:2px solid black;
+   }
+   #table-team table tr{
+     font-size: 15px;
+     margin-bottom: 5px;
+     text-align: center;
+     border:2px solid black;
+   }
+   
+   .team-page-icon{
+     width: 100px;
+   }
+   
+   /*--- player details---*/
+   
+   #player-details-wrapper{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+   }
+   #player-details-con{
+     width:60% ;
+     height: 65vh;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 60px;
+   }
+   
+   
+   .player-detail td{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 5px;
+   background-color: #001f3f;
+   color: white;
+   
+   }
+   .player-detail {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+     background:radial-gradient(white, y);
+     
+     
+   }
+   #player_detail-img img{
+     width: 30%;
+     margin: 5px 0 -5px 0;
+     margin-left: 19vw;
+     
+     
+   }
+   
+   
+   /*---- add player or team ----*/
+   
+   #new-player-det td{
+     border: 1px solid black;
+   width: 30vw;
+   padding-left: 10vw;
+   }
+   
+   
+   
+   #add-team{
+     margin-top: 100px;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     align-items: center;
+       
+   }
+   #addteamform{
+     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+     background:radial-gradient(white, lightgreen);
+    border-radius: 20px;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 0 60px 0;
+     margin-top:-60px ;
+     margin-bottom: 30px;
+   }
+   #addteamform p{
+     font-size: 24px;
+     padding: 20px 0 0 0;
+     font-weight: 500;
+     color: black;
+   }
+   #addteamform input{
+     width: 70%;
+     height: 40px;
+   }
+   #addteamform select{
+     width: 70%;
+     height: 40px;
+   }
+   
+   #addteamform button{
+     box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+     display: block;
+     font-size: 16px;
+     margin-top: 50px;
+     font-weight: 600;
+     color: #fff;
+     padding: 16px 30px;
+     letter-spacing: 2px;
+     background-color: rgb(76, 73, 73);
+     border: none;
+     border-radius: 40px;
+     cursor: pointer;
+   
+     
+   }
+   #addteamform button:hover{
+     box-shadow: 0 2px 10px rgb(0 0 0 / 75%);
+   }
+   
+   
+   
+   /*---- footer---*/
+   footer {
+     background-color: rgb(63, 62, 62);
+     height: 180px;
+     padding: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+   }
+   footer ul li {
+     list-style: none;
+     text-transform: uppercase;
+     margin-bottom: 5px;
+     cursor: pointer;
+   }
+   footer ul li a,
+   footer ul li {
+     text-decoration: none;
+     color: #b8b8b8;
+     font-size: 14px;
+   }
+   footer ul li a:hover,
+   footer ul li:hover {
+     color: yellow;
+   }
+   footer ul li h3 {
+     text-decoration: none;
+     color: white;
+     font-size: 16px;
+     margin-bottom: 10px;
+     cursor: pointer;
+   }
